@@ -1,0 +1,16 @@
+﻿@model PizzaOrderApp.Models.User
+
+<h2>Реєстрація</h2>
+<form asp-action="Register" method="post">
+    <div>
+        <label>Ім'я:</label>
+        <input asp-for="Name" />
+        <span asp-validation-for="Name"></span>
+    </div>
+    <div>
+        <label>Вік:</label>
+        <input asp-for="Age" type="number" />
+        <span asp-validation-for="Age"></span>
+    </div>
+    <button type="submit">Підтвердити</button>
+</form>

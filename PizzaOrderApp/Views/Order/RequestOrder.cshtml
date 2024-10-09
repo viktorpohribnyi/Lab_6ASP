@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Request Order";
+}
+
+<h2>Запит на замовлення піци</h2>
+
+<form asp-action="OrderQuantity" method="post">
+    <div>
+        <label>Скільки одиниць товару ви бажаєте замовити?</label>
+        <input type="number" name="quantity" min="0" required />
+    </div>
+    <button type="submit">Підтвердити</button>
+</form>
